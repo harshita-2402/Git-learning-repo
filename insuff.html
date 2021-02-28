@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url("child.jpg");
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+  background-color: rgb(19, 162, 228);
+  background-image: url("pink.jpg");
+  height: 600px; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+}
+.container3 { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+input[type=text] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: 5;
+  background: #faf9f9;
+}
+
+input[type=text]:focus {
+  background-color: rgb(97, 125, 138);
+  outline-style: double;
+}
+
+hr {
+  border: 1px solid #141111;
+  margin-bottom: 30px;
+}
+
+a {
+  color: rgb(88, 100, 112);
+}
+
+#button4{
+    width: 200px; 
+    height: 30px;
+    color: rgb(12, 12, 17);
+    background-color: rgb(11, 241, 42);
+}
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+    <div class="container">
+       
+        <h1><b>FINANCIAL AID</b></h1>
+        <div class ="center">
+        <p>Sorry your donation is insufficient for now.<br>
+        Would you like to store your funds in a Bank?</p>
+        <button type="submit" class="signupbtn" id="button4"><b>YES</b></button>
+        <button type="submit" class="signupbtn" id="button4"><b>NO</b></button>
+        </div>
+    </div>
+<br><br>
+</form>
+
+</body>
+</html>
